@@ -7,10 +7,10 @@ import Footer from '../../../components/footer';
 import NewsLetter from '../../../components/NewsLetter.js/index.js';
 import GlobalStyle, { Container } from '../../globalStyles';
 import DetailBaner from '../../../DetailComponents/DetailBaner';
-import ProductDetail from '../../../DetailComponents/productDetail';
 import Spining from '../../../components/Spining';
 import { RecentArival } from '../../../utilits/Laptops';
 import CartProvider from '../../../components/context';
+import ProductDetail from '../../../DetailComponents/ProductDetail';
 
 const LaptopDetail = () => {
 	const [spining, setSpining] = useState(true);
