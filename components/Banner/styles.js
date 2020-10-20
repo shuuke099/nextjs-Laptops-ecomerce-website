@@ -52,7 +52,7 @@ export const Slide = styled.div`
 			text-transform: uppercase;
 			color: #fff;
 			font-size: 12px;
-			z-index: 20;
+			z-index: 1;
 		}
 	}
 	.banner-title {
@@ -62,7 +62,7 @@ export const Slide = styled.div`
 		margin-bottom: 1rem;
 		text-transform: capitalize;
 		letter-spacing: 1px;
-		z-index: 20;
+		z-index: 1;
 		color: #fff;
 		width: 80%;
 	}
@@ -76,7 +76,7 @@ export const Slide = styled.div`
 		border: none;
 		width: 10rem;
 		padding: 0.5rem 1rem;
-		z-index: 20;
+		z-index: 1;
 		font-size: 12px;
 		text-transform: uppercase;
 		border-radius: 1.5rem;

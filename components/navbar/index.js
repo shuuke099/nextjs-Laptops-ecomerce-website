@@ -8,6 +8,8 @@ import Navitems from './navItems';
 import { Navheader, togglebar } from '../../utilits';
 import CartNav from './cartNav';
 import { cartContext } from '../context';
+import NavToggle from './navToggle';
+
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	const [navStick, setNavStick] = useState(false);
@@ -67,12 +69,12 @@ const Navbar = () => {
 				<div className={navStick ? 'nav-wrap nav-sticky' : 'nav-wrap'}>
 					<Container>
 						<div className='nav '>
-							<div className='nav-barnd'>
+							<a href='/' className='nav-barnd'>
 								<img src='/img/27.png' alt='' className='img-logo' />
 								<h1 className='brand-text'>
 									S<span>t</span>ore
 								</h1>
-							</div>
+							</a>
 							{toggle && <div className='overlay'></div>}
 							<ul className='nav-ul'>
 								{Navheader.map((navbar) => (
@@ -84,8 +86,11 @@ const Navbar = () => {
 									<ImCross />
 									<p>menue</p>
 								</div>
-								{togglebar.map((navbar) => (
+								{Navheader.map((navbar) => (
 									<Navitems key={navbar.id} navbar={navbar} />
+								))}
+								{togglebar.map((navbar) => (
+									<NavToggle key={navbar.id} navbar={navbar} />
 								))}
 							</ul>
 
@@ -192,6 +197,8 @@ const LowerNavWrapper = styled.div`
 	.nav-barnd {
 		display: flex;
 		height: 100%;
+		color: #000;
+		text-decoration: none;
 		align-items: center;
 		span {
 			color: ${colors.camea};
@@ -214,14 +221,14 @@ const LowerNavWrapper = styled.div`
 		left: 0;
 		display: flex;
 		flex-direction: column;
-		background: #ffffff;
+		background: #fff;
 		height: 100vh;
 		opacity: 0;
 		width: 0;
 		margin: 0;
 		padding: 1rem 0 1rem 1rem;
 		overflow: auto;
-		z-index: 30000;
+		z-index: 1000;
 		.cross-menue {
 			display: block;
 			border-bottom: 1px solid #e3e3e3;

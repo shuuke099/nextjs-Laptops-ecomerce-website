@@ -6,6 +6,8 @@ const CartProvider = ({ children }) => {
 	const [total, setTotal] = useState(0);
 	const [subTotal, setSubtotal] = useState(0);
 	const [Open, setOpen] = useState(false);
+	const [wishList, setwishList] = useState(false);
+	const [compare, setCompare] = useState(false);
 	useEffect(() => {
 		addTotals();
 	}, [cartItems]);
@@ -44,7 +46,11 @@ const CartProvider = ({ children }) => {
 					total,
 					subTotal,
 					Open,
+					wishList,
+					compare,
 					addCart,
+					setwishList,
+					setCompare,
 					setOpen,
 				}}
 			>

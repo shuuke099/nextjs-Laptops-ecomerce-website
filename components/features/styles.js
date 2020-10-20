@@ -22,7 +22,7 @@ export const FeatureWrapper = styled.div`
   .button-model {
 	display:flex;
 	align-items:center;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.1);
 
   }
   .cart-content {
@@ -272,6 +272,7 @@ export const FeaturesHearder = styled.div`
 
 export const FeatureCard = styled.div`
 	width: 100%;
+	margin-top: 3rem;
 	overflow: hidden;
 	.card-slder-wrap {
 		width: 100%;
@@ -300,7 +301,7 @@ export const FeatureCard = styled.div`
 		width: 16%;
 		margin-bottom: 1rem;
 		flex-shrink: 0;
-		height: 17rem;
+		height: 17.5rem;
 		border-radius: 0.7rem;
 		.feature-top {
 			width: 100%;
@@ -344,7 +345,6 @@ export const FeatureCard = styled.div`
 	}
 	.buttons-list {
 		position: absolute;
-		/* width: 40%; */
 		display: flex;
 		flex-direction: column;
 		margin-left: auto;
@@ -384,15 +384,23 @@ export const FeatureCard = styled.div`
 	.footer {
 		padding: 1rem 0 0 1.5rem;
 	}
+	.footer-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.price {
+			margin-right: 1rem;
+			color: ${colors.camea};
+			font-weight: 500;
+		}
+	}
 	.footer-title {
 		text-transform: capitalize;
 		font-size: 13px;
 		margin: 0.4rem 0;
+		height: 1.5rem;
 	}
-	.price {
-		color: ${colors.camea};
-		font-weight: 500;
-	}
+
 	.star {
 		color: #cccccc;
 	}
@@ -400,10 +408,31 @@ export const FeatureCard = styled.div`
 	.star-checked {
 		color: #ffb700;
 	}
-
+	.addCart {
+		font-size: 13px;
+		width: 5rem;
+		float: right;
+		margin-right: 1rem;
+		margin-top: 0.5rem;
+		cursor: pointer;
+		height: 1.9rem;
+		border: none;
+		border-radius: 0.3rem;
+		background: ${colors.camea};
+		color: #fff;
+		text-transform: capitalize;
+		:hover {
+			background: #000;
+		}
+		:active,
+		:focus {
+			outline: none;
+		}
+	}
 	@media screen and (min-width: 550px) {
+		margin-top: 0;
 		.feature-cards {
-			height: 19rem;
+			height: 18rem;
 		}
 	}
 

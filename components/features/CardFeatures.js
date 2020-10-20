@@ -9,10 +9,16 @@ import { cartContext } from '../context';
 import ButtonsModel from './buttosModel';
 
 const CardFeatures = ({ laptop, load }) => {
-	const { Open, addCart, setOpen, setNavcart } = useContext(cartContext);
-	const [wishList, setwishList] = useState(false);
-	const [compare, setCompare] = useState(false);
-	cartContext;
+	const {
+		Open,
+		addCart,
+		setOpen,
+		wishList,
+		setwishList,
+		compare,
+		setCompare,
+	} = useContext(cartContext);
+
 	const [spining, setSpining] = useState(false);
 	const router = useRouter();
 	const goDetail = () => {
@@ -32,12 +38,11 @@ const CardFeatures = ({ laptop, load }) => {
 					setOpen={setOpen}
 					id={laptop.id}
 					addCart={addCart}
-					setNavcart={setNavcart}
 					goDetail={goDetail}
 					setwishList={setwishList}
 					setCompare={setCompare}
 				/>
-				<div className='card-content' onClick={goDetail}>
+				<div className='card-content'>
 					<div className='feature-top'>
 						<img
 							src={`/img/${laptop.img}.png`}
@@ -51,15 +56,21 @@ const CardFeatures = ({ laptop, load }) => {
 						/>
 					</div>
 					<div className='footer'>
-						<div className='stars'>
-							<MdStar className='star-checked' />
-							<MdStar className='star-checked' />
-							<MdStar className='star-checked' />
-							<MdStarHalf className='star-checked' />
-							<MdStar className='star' />
+						<div className='footer-top'>
+							<div className='stars'>
+								<MdStar className='star-checked' />
+								<MdStar className='star-checked' />
+								<MdStar className='star-checked' />
+								<MdStarHalf className='star-checked' />
+								<MdStar className='star' />
+							</div>
+							<div className='price'>${laptop.price}</div>
 						</div>
+
 						<div className='footer-title'>{laptop.title}</div>
-						<div className='price'>{laptop.price}</div>
+						<button className='addCart' onClick={goDetail}>
+							Go detail
+						</button>
 					</div>
 				</div>
 			</div>

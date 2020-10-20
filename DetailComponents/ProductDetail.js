@@ -8,7 +8,7 @@ import Brands from '../components/Banner/Brands';
 import { brands } from '../utilits';
 import { cartContext } from '../components/context';
 const ProductDetail = ({ laptop }) => {
-	const { addCart, setOpen, setNavcart } = useContext(cartContext);
+	const { addCart, setOpen, setwishList, setCompare } = useContext(cartContext);
 	return (
 		<ProductWrapper>
 			<div className='cart-top'>
@@ -83,15 +83,24 @@ const ProductDetail = ({ laptop }) => {
 								onClick={() => {
 									setOpen(true);
 									addCart(laptop.id);
-									setNavcart(true);
 								}}
 							>
 								add to cart
 							</button>
-							<button className='icon-list'>
+							<button
+								className='icon-list'
+								onClick={() => {
+									setwishList(true);
+								}}
+							>
 								<FiHeart />
 							</button>
-							<button className='icon-list'>
+							<button
+								className='icon-list'
+								onClick={() => {
+									setCompare(true);
+								}}
+							>
 								<CgMenuLeft />
 							</button>
 						</div>
@@ -210,13 +219,7 @@ const ProductWrapper = styled.div`
 			}
 		}
 
-		/* quantity
-quantity-amount
-arrows
-arrow-up
-arrow-down */
 		.buttons-list {
-			/* width: 40%; */
 			display: flex;
 
 			.addCart {
@@ -230,6 +233,11 @@ arrow-down */
 				text-transform: capitalize;
 				:hover {
 					background: #000000;
+				}
+				:active,
+				:focus {
+					outline: none;
+					border: none;
 				}
 			}
 		}
@@ -251,6 +259,11 @@ arrow-down */
 			background: ${colors.camea};
 			color: #fff;
 			transition: all 0.3s ease;
+		}
+		.icon-list:active,
+		.icon-list:focus {
+			outline: none;
+			border: none;
 		}
 	}
 

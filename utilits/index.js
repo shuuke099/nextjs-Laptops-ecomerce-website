@@ -90,48 +90,6 @@ export const togglebar = [
 		title: 'accer',
 		link: '/',
 	},
-	{
-		id: 8,
-		title: 'more categories',
-		link: '/',
-	},
-
-	{
-		id: 9,
-		title: 'home',
-		link: '/',
-	},
-	{
-		id: 10,
-		title: 'featured',
-		link: '/',
-	},
-
-	{
-		id: 11,
-		title: 'delivery',
-		link: '/',
-	},
-	{
-		id: 12,
-		title: 'shipment',
-		link: '/',
-	},
-	{
-		id: 13,
-		title: 'legal active',
-		link: '/',
-	},
-	{
-		id: 14,
-		title: 'secure payment',
-		link: '/',
-	},
-	{
-		id: 15,
-		title: 'more',
-		link: '/',
-	},
 ];
 /* 
 'laptop brands',
