@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { MdStar, MdStarHalf } from 'react-icons/md';
 import { timeStamps } from '../../utilits';
 import { BsEye } from 'react-icons/bs';
@@ -6,7 +6,7 @@ import { FiHeart } from 'react-icons/fi';
 import { CgMenuLeft } from 'react-icons/cg';
 
 const Product = ({ product, carousels }) => {
-  const carouselRef = useRef(null);
+
   
 
   return (
@@ -20,7 +20,7 @@ const Product = ({ product, carousels }) => {
           />
         </div>
         <div className='product-carousel'>
-          <div className='carousel-slide' ref={carouselRef}>
+          <div className='carousel-slide'>
             {carousels.map((carousel, index) => {
               return (
                 <div className='img-carousel' key={index}>

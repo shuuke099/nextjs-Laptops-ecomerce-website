@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BiLaptop } from 'react-icons/bi';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { RecentArival } from '../../utilits/Laptops';
 import Product from './product';

@@ -3,7 +3,7 @@ import { BsEye } from 'react-icons/bs';
 import { FiHeart } from 'react-icons/fi';
 import { CgMenuLeft } from 'react-icons/cg';
 import { FaShoppingCart } from 'react-icons/fa';
-import AddedCart from './AddedCart';
+
 
 const ButtonList = ({
 	addCart,

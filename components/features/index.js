@@ -3,8 +3,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { RecentArival } from '../../utilits/Laptops';
 import CardFeatures from './CardFeatures';
 import { FeaturesHearder, FeatureCard, FeatureWrapper } from './styles';
-import { carouselContext } from '../context';
-import { MdDesktopWindows } from 'react-icons/md';
+
 
 const Features = ({ title, load }) => {
 	const [width, setWidth] = useState(0);

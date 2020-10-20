@@ -1,14 +1,12 @@
 import React, { useEffect, useContext } from 'react';
 import styled from 'styled-components';
 import { colors } from '../utilits/styles';
-import { BsEye } from 'react-icons/bs';
 import { FiHeart } from 'react-icons/fi';
 import { CgMenuLeft } from 'react-icons/cg';
 import { FiChevronUp, FiChevronDown } from 'react-icons/fi';
 import Brands from '../components/Banner/Brands';
 import { brands } from '../utilits';
 import { cartContext } from '../components/context';
-// import { RecentArival } from '../utilits/Laptops';
 const ProductDetail = ({ laptop }) => {
 	const { addCart, setOpen, setNavcart } = useContext(cartContext);
 	return (

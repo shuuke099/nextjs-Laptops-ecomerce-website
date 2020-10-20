@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Container } from '../../src/globalStyles';
 import { brands } from '../../utilits';
-import { colors } from '../../utilits/styles';
 import Brands from './Brands';
 
 const BannerSlider = ({ title, subtitle }) => {

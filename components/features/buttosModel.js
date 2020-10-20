@@ -1,4 +1,3 @@
-import { FaCheck } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
 const ButtonsModel = ({ setOPenmodels, text }) => {
 	return (
