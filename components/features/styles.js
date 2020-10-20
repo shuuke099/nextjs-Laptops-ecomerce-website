@@ -200,7 +200,8 @@ export const FeatureWrapper = styled.div`
 `;
 
 export const FeaturesHearder = styled.div`
-	margin-bottom: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
 	height: 100%;
 
 	.featues-header {
@@ -420,12 +421,13 @@ export const FeatureCard = styled.div`
 		.office-lap {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: space-around;
 			background: left / cover no-repeat url('/img/office-1.jpg');
 			height: 28rem;
-			padding: 0.5rem;
+			padding: 5rem 0.5rem;
 			position: relative;
-			color: #fff;
+			font-size: 12px;
+			color: ${colors.lightGrey};
 			border-radius: 0.3rem;
 			.content {
 				z-index: 10;
@@ -435,6 +437,10 @@ export const FeatureCard = styled.div`
 				text-transform: capitalize;
 				font-weight: 700;
 				line-height: 1.5rem;
+				color: #fff;
+			}
+			.offcice-p {
+				margin-top: 0.5rem;
 			}
 			.office-btn {
 				z-index: 10;

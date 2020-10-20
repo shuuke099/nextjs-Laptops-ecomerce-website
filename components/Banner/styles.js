@@ -46,7 +46,7 @@ export const Slide = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		margin-left: 1.5rem;
-		width: 70%;
+		width: 90%;
 
 		p {
 			text-transform: uppercase;
@@ -88,6 +88,9 @@ export const Slide = styled.div`
 		}
 	}
 	@media screen and (min-width: 768px) {
+		.bannerSlide-contnt {
+			width: 70%;
+		}
 		.banner-title {
 			font-size: 1.7rem;
 		}

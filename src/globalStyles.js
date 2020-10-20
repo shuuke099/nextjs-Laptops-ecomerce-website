@@ -50,9 +50,13 @@ const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
-  width:100vw;
+  width:119vw;
+  
+  @media only screen and (min-width: 490px) {
   padding-left: 10px;
   padding-right: 10px;
+  width: 90%;
+  }
 
   @media only screen and (min-width: 768px) {
     width: 720px;

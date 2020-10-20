@@ -6,15 +6,15 @@ import { colors } from '../../utilits/styles';
 import { rotate } from './keyframes';
 
 const Subbaners = ({ inverse, subbanners }) => {
-  return (
-    <>
-      <SubbanerWrapper>
-        {subbanners.map((subbanner, index) => (
-          <SubCard inverse={inverse} key={index} subbanner={subbanner} />
-        ))}
-      </SubbanerWrapper>
-    </>
-  );
+	return (
+		<>
+			<SubbanerWrapper>
+				{subbanners.map((subbanner, index) => (
+					<SubCard inverse={inverse} key={index} subbanner={subbanner} />
+				))}
+			</SubbanerWrapper>
+		</>
+	);
 };
 const SubbanerWrapper = styled.div`
   display:flex;
@@ -24,7 +24,7 @@ const SubbanerWrapper = styled.div`
   .subcard {
     box-sizing: border-box;
     background: ${colors.lightGrey};
-    width: 27rem;
+    width: 100%;
     height: 12rem;
     margin:0;
     position: relative;
@@ -32,7 +32,7 @@ const SubbanerWrapper = styled.div`
     overflow: hidden;
     display: flex;
     flex-direction: ${(props) =>
-      props.inverse === true ? 'row-reverse' : 'row'};
+			props.inverse === true ? 'row-reverse' : 'row'};
     justify-content: space-between;
     padding: 1rem;
     margin: .5rem 0;
@@ -81,7 +81,12 @@ const SubbanerWrapper = styled.div`
       }
     }
   }
-
+  @media screen and (min-width: 490px) {
+    .subcard {
+      width: 95%;
+    
+  }
+    } 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     .subcard:not(:first-child) {

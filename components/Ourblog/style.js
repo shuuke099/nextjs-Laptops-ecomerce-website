@@ -80,7 +80,7 @@ export const BlogCardWrapper = styled.div`
 	.search-icon {
 		position: absolute;
 		bottom: 1rem;
-		left: 32%;
+		left: 34%;
 		z-index: 10;
 		opacity: 0;
 		transition: all 0.4s ease-in-out;
@@ -89,7 +89,7 @@ export const BlogCardWrapper = styled.div`
 	.cogs-icon {
 		position: absolute;
 		top: 1rem;
-		right: 32%;
+		right: 34%;
 		opacity: 0;
 		z-index: 10;
 		transition: all 0.4s ease-in-out;
@@ -178,10 +178,10 @@ export const BlogCardWrapper = styled.div`
 			height: 12rem;
 		}
 		.search-icon {
-			left: 35%;
+			left: 36%;
 		}
 		.cogs-icon {
-			right: 35%;
+			right: 36%;
 		}
 		.blog-card:hover .search-icon {
 			transform: translateY(-4rem);
@@ -198,10 +198,10 @@ export const BlogCardWrapper = styled.div`
 			height: 12rem;
 		}
 		.search-icon {
-			left: 38%;
+			left: 39%;
 		}
 		.cogs-icon {
-			right: 38%;
+			right: 39%;
 		}
 		.blog-card:hover .search-icon {
 			transform: translateY(-4rem);
@@ -212,10 +212,23 @@ export const BlogCardWrapper = styled.div`
 			opacity: 1;
 		}
 	}
-
+	@media screen and (min-width: 768px) {
+		.search-icon {
+			left: 41%;
+		}
+		.cogs-icon {
+			right: 41%;
+		}
+	}
 	@media screen and (min-width: 992px) {
 		.blog-slider {
 			width: 168%;
+		}
+		.search-icon {
+			left: 40%;
+		}
+		.cogs-icon {
+			right: 40%;
 		}
 	}
 `;
