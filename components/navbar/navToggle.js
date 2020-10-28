@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-const NavToggle = ({navbar}) => {
+const NavToggle = ({ navbar }) => {
 	return (
 		<li className='nav-items'>
-			<Link href='/'>
+			<Link href='/detailPage'>
 				<a className='nav-links'>{navbar.title}</a>
 			</Link>
 		</li>

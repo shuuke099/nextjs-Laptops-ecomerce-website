@@ -17,7 +17,7 @@ const Brands = ({ brands }) => {
 				{brands.map((brand, index) => {
 					return (
 						<li className='brand-items' key={index}>
-							<a href='/' className='brand-link'>
+							<a href='/detailPage' className='brand-link'>
 								{brand}
 							</a>
 						</li>

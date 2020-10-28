@@ -45,9 +45,6 @@ const AddedCart = ({ setOpen, laptop }) => {
 							<div className='info-storage'>
 								<strong>storage:</strong> {laptop.storage}
 							</div>
-							<div className='info-storage'>
-								<strong>quantity:</strong> {laptop.quantity}
-							</div>
 						</div>
 					</div>
 				</div>

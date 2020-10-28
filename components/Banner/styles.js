@@ -71,9 +71,12 @@ export const Slide = styled.div`
 		display: block;
 	}
 	.banner-button {
+		text-decoration: none;
 		display: block;
 		background: ${colors.camea};
 		border: none;
+		margin-top: 0.7rem;
+		text-align: center;
 		width: 10rem;
 		padding: 0.5rem 1rem;
 		z-index: 1;
