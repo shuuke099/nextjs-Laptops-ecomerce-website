@@ -23,6 +23,11 @@ const LaptopDetail = () => {
 		}, 2000);
 	}, []);
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	},[]);
+
+
 	const laptop = RecentArival.find((laptop) => laptop.slug === slug);
 
 	if (!laptop) {

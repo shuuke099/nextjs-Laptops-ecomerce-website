@@ -77,7 +77,6 @@ export const RecentArival = [
 		imgHover: 4,
 		processor: 'Intel i5-10300H',
 		video_card: 'NVIDIA GeForce GTX 1050',
-		price: 635,
 		size: '15.6 inch',
 		storage: '256GB',
 		Ram: '12GB',
